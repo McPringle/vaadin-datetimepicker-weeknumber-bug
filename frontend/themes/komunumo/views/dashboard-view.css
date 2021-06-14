@@ -1,0 +1,93 @@
+/*
+ * Komunumo - Open Source Community Manager
+ * Copyright (C) Marcus Fihlon and the individual contributors to Komunumo.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.dashboard-view {
+  background-color: var(--lumo-contrast-10pct);
+  box-sizing: border-box;
+  display: block;
+  font-size: var(--lumo-font-size-m);
+  height: 100%;
+  overflow: auto;
+  padding: var(--lumo-space-m) var(--lumo-space-l);
+}
+
+.dashboard-view vaadin-board {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* Wrapper */
+.dashboard-view .wrapper {
+  display: flex;
+  padding: var(--lumo-space-s);
+}
+
+/* Card */
+.dashboard-view .card {
+  align-items: baseline;
+  background-color: var(--lumo-base-color);
+  border-radius: var(--lumo-border-radius);
+  box-shadow: var(--lumo-box-shadow-xs);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.dashboard-view .card h2 {
+  margin-bottom: 0;
+  margin-top: var(--lumo-space-m);
+}
+
+.dashboard-view .card h3 {
+  margin-bottom: var(--lumo-space-xs);
+  margin-left: var(--lumo-space-m);
+  margin-top: var(--lumo-space-m);
+}
+
+/* Spacing */
+.dashboard-view .space-m {
+  padding: var(--lumo-space-m);
+}
+
+/* Text colors */
+.dashboard-view .error-text {
+  color: var(--lumo-error-text-color);
+}
+
+.dashboard-view .primary-text {
+  color: var(--lumo-primary-text-color);
+}
+
+.dashboard-view .secondary-text {
+  color: var(--lumo-secondary-text-color);
+}
+
+.dashboard-view .success-text {
+  color: var(--lumo-success-text-color);
+}
+
+/* Charts */
+.dashboard-view vaadin-chart {
+  padding-top: var(--lumo-space-s);
+}
+
+/* Grid */
+.dashboard-view vaadin-grid {
+  height: 300px;
+}
